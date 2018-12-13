@@ -40,7 +40,7 @@ public class Loader
         System.out.println();
 
         //Разбивка ФИО
-       /* System.out.println("Введите Фамилию Имя Отчество: ");
+        System.out.println("Введите Фамилию Имя Отчество: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String readString = reader.readLine();
@@ -48,7 +48,7 @@ public class Loader
 
         System.out.println("Фамилия: " + fragments3[0]);
         System.out.println("Имя: " + fragments3[1]);
-        System.out.println("Отчество: " + fragments3[2]);*/
+        System.out.println("Отчество: " + fragments3[2]);
 
      /*   String fragments4[] = text.split("\\D");
         System.out.println(fragments4.length);
