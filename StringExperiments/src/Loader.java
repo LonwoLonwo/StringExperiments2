@@ -24,7 +24,7 @@ public class Loader
 
         System.out.println();
 
-        //Вавриант 2. Направлени только на поиск чисел.
+        //Вавриант 2. Направлен только на поиск чисел.
         String fragments2[] = text.split("\\W+");
 
         int fr20 = Integer.parseInt(fragments2[1]);
@@ -46,27 +46,19 @@ public class Loader
         String readString = reader.readLine();
         String fragments3[] = readString.split("\\s+");
 
+        /*Pattern pattern = Pattern.compile("[А-ЯЁ][а-яё]+");
+
+        Matcher matcher = pattern.matcher(readString);
+
+        while (matcher.find()) {
+            int start = matcher.start();
+            int end = matcher.end();
+            System.out.println(readString.substring(start, end));
+        }*/
+
         System.out.println("Фамилия: " + fragments3[0]);
         System.out.println("Имя: " + fragments3[1]);
         System.out.println("Отчество: " + fragments3[2]);
-
-     /*   String fragments4[] = text.split("\\D");
-        System.out.println(fragments4.length);
-
-        int fragmentsCount = fragments4.length;
-        for(int i = 0; i < fragmentsCount; i++)
-        {
-            System.out.println(fragments4[i]);
-        }*/
-
-     Pattern p = Pattern.compile("\\d+");
-     Matcher m = p.matcher(text);
-
-     while(m.find()) {
-         System.out.println(m.group());
-     }
-
-        System.out.println();
 
     }
 }
