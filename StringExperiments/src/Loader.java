@@ -37,28 +37,6 @@ public class Loader
 
         System.out.println("Все вмести заработали: " + sum2);
 
-        System.out.println();
-
-        //Разбивка ФИО
-        System.out.println("Введите Фамилию Имя Отчество: ");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        String readString = reader.readLine();
-        String fragments3[] = readString.split("\\s+");
-
-        /*Pattern pattern = Pattern.compile("[А-ЯЁ][а-яё]+");
-
-        Matcher matcher = pattern.matcher(readString);
-
-        while (matcher.find()) {
-            int start = matcher.start();
-            int end = matcher.end();
-            System.out.println(readString.substring(start, end));
-        }*/
-
-        System.out.println("Фамилия: " + fragments3[0]);
-        System.out.println("Имя: " + fragments3[1]);
-        System.out.println("Отчество: " + fragments3[2]);
 
     }
 }
