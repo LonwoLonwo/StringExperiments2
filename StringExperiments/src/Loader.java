@@ -1,12 +1,6 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Loader
 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String text = "Вася заработал 5000 рублей, Петя - 7563 рубля, а Маша - 30000 рублей";
 
         //Вариант 1. На случай, когда известо, в каком именно месте строки находятся числа
